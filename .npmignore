@@ -1,0 +1,12 @@
+node_modules/
+.vscode/
+src/
+dist/example.*
+tsconfig.json
+example.js
+.DS_Store
+.gitignore
+.npmignore
+.nvmrc
+.eslintrc.js
+.prettierignore
