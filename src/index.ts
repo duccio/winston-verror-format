@@ -9,7 +9,7 @@ export interface VErrorFormatOptions {
 class VErrorFormat {
   public constructor(private opts: VErrorFormatOptions = {}) {}
 
-  public transform(einfo: TransformableInfo): TransformableInfo | boolean {
+  public transform(einfo: TransformableInfo): TransformableInfo {
     if (einfo instanceof Error) {
       const info = Object.assign({}, einfo, {
         level: einfo.level,
