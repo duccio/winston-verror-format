@@ -1,5 +1,11 @@
 # Winston@3 verror format
 
+[![Version npm](https://img.shields.io/npm/v/winston-verror-format.svg?style=flat-square)](https://www.npmjs.com/package/winston-verror-format)
+[![npm Downloads](https://img.shields.io/npm/dm/winston-verror-format.svg?style=flat-square)](https://npmcharts.com/compare/winston-verror-format?minimal=true)
+[![Dependencies](https://img.shields.io/david/duccio/winston-verror-format.svg?style=flat-square)](https://david-dm.org/duccio/winston-verror-format)
+[![Build Status](https://img.shields.io/travis/duccio/winston-verror-format/master.svg?style=flat-square)](https://travis-ci.com/duccio/winston-verror-format)
+[![Codecov](https://img.shields.io/codecov/c/github/duccio/winston-verror-format.svg)](https://codecov.io/github/duccio/winston-verror-format)
+
 Winston@3 [verror](https://github.com/joyent/node-verror) full stack trace, with all nested errors recursively reported as `caused by:` + `err.stack`.
 
 ## Install
