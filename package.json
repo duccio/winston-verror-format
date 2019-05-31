@@ -1,6 +1,6 @@
 {
   "name": "winston-verror-format",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Winston@3 verror full stack trace, with all nested errors recursively reported.",
   "author": {
     "name": "Aldo Armiento <aldo@armiento.com>",
