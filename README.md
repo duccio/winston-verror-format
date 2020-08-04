@@ -5,7 +5,7 @@
 [![Dependencies](https://img.shields.io/david/duccio/winston-verror-format.svg?style=flat-square)](https://david-dm.org/duccio/winston-verror-format)
 [![Build Status](https://img.shields.io/travis/duccio/winston-verror-format/master.svg?style=flat-square)](https://travis-ci.com/duccio/winston-verror-format)
 [![Codecov](https://img.shields.io/codecov/c/github/duccio/winston-verror-format.svg)](https://codecov.io/github/duccio/winston-verror-format)
-[![Greenkeeper badge](https://badges.greenkeeper.io/duccio/winston-verror-format.svg)](https://greenkeeper.io/)
+[![Known Vulnerabilities](https://snyk.io/test/github/duccio/winston-verror-format/badge.svg)](https://snyk.io/test/github/duccio/winston-verror-format)
 
 Winston@3 [verror](https://github.com/joyent/node-verror) full stack trace, with all nested errors recursively reported as `caused by:` + `err.stack`.
 
@@ -24,7 +24,7 @@ import VError from "verror";
 
 const logger = createLogger({
   format: format.combine(verrorFormat({ stack: true }), format.json()),
-  transports: [new transports.Console()]
+  transports: [new transports.Console()],
 });
 
 logger.error(new VError(new Error("Error #1"), "Unexpected error"));
@@ -39,7 +39,7 @@ const VError = require("verror");
 
 const logger = createLogger({
   format: format.combine(verrorFormat({ stack: true }), format.json()),
-  transports: [new transports.Console()]
+  transports: [new transports.Console()],
 });
 
 logger.error(new VError(new Error("Error #1"), "Unexpected error"));

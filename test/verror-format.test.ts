@@ -20,7 +20,7 @@ describe("verrorFormat", () => {
 describe("verrorFormat (with message as error)", () => {
   const info = {
     level: "info",
-    message: new VError(new Error("Error #1"), "Unexpected error")
+    message: new VError(new Error("Error #1"), "Unexpected error"),
   }
   const out = verrorFormat().transform((info as unknown) as TransformableInfo)
 
@@ -49,7 +49,7 @@ describe("verrorFormat (with stack)", () => {
 describe("verrorFormat (with message as error and stack)", () => {
   const info = {
     level: "info",
-    message: new VError(new Error("Error #1"), "Unexpected error")
+    message: new VError(new Error("Error #1"), "Unexpected error"),
   }
   const out = verrorFormat({ stack: true }).transform((info as unknown) as TransformableInfo)
 
@@ -65,7 +65,7 @@ describe("verrorFormat (with message as error and stack)", () => {
 describe("verrorFormat (with normal message)", () => {
   const info = {
     level: "info",
-    message: "127.0.0.1 - there's no place like home"
+    message: "127.0.0.1 - there's no place like home",
   }
   const out = verrorFormat().transform(info)
 

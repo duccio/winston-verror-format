@@ -15,7 +15,7 @@ class VErrorFormat {
         level: einfo.level,
         [LEVEL]: einfo[LEVEL] || einfo.level,
         message: einfo.message,
-        [MESSAGE]: einfo[MESSAGE] || einfo.message
+        [MESSAGE]: einfo[MESSAGE] || einfo.message,
       })
 
       if (this.opts.stack) {
